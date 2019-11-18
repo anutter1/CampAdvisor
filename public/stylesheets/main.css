@@ -1,0 +1,60 @@
+body {
+	font-family: 'Taviraj', serif;
+}
+
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}
+
+.delete-form {
+	display: inline;
+}
+
+.jumbotron {
+	background-color: #b08c77;
+}
+
+.navbar-default {
+    background-color: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.btn-primary {
+	border: none;
+}
+
+.smButton {
+	background: none;
+	color: #337ab7;
+	border: none;
+}
+
+.comment {
+	margin: 0;
+}
+
+.commentBody {
+	margin-bottom: 10px;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
