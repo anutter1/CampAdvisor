@@ -20,10 +20,9 @@ var indexRoutes = require("./routes/index");
 mongoose.set('useFindAndModify', false);
 mongoose.set("useUnifiedTopology", true);
 
-console.log(process.env.DATABASEURL);
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
-// mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
-// "mongodb+srv://camp_advisor:L33ds1972@campadvisor-qsrmk.mongodb.net/test?retryWrites=true&w=majority"
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp"
+mongoose.connect(url, {useNewUrlParser: true});
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 
